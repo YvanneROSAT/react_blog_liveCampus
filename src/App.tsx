@@ -9,7 +9,7 @@ const router = createBrowserRouter([
     element: <DesignSysteme />
   },
   {
-    path: "/blog/*",
+    path: "/*",
     children: [
       // New blog index route
       { index: true, element: <Blog /> },

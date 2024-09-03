@@ -1,3 +1,9 @@
+import HeroSection from "@/components/heroSection";
+
 export default function Homme() {
-    return <h1>Blog index</h1>
+  return (
+    <>
+      <HeroSection />
+    </>
+  );
 }
