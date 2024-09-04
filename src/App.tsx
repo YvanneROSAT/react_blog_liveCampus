@@ -2,6 +2,7 @@ import { createBrowserRouter,  RouterProvider } from "react-router-dom"
 import Blog from "@/pages/blog"
 import Posts from "@/pages/posts"
 import DesignSysteme from "@/pages/designSysteme"
+import NotFound from "@/pages/notFound"
 
 const router = createBrowserRouter([
   {
@@ -11,10 +12,9 @@ const router = createBrowserRouter([
   {
     path: "/*",
     children: [
-      // New blog index route
       { index: true, element: <Blog /> },
-      // Blog subapp splat route added for /blog/posts matching
-      { path: "*", element: <Posts /> },
+      {path: "post/:slug", element: <Posts /> },
+      { path: "*", element: <NotFound /> },
     ],
   }
 ])

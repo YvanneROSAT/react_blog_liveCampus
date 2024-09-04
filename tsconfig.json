@@ -14,6 +14,7 @@
       "@/*": ["./src/*"],
       "@/page": ["./src/page/*"],
       "@/component": ["./src/component/*"],
+      "@/hook": ["./src/hook/*"],
     }
   }
 }

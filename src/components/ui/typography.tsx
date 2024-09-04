@@ -1,5 +1,5 @@
 type TypographyProps = {
-  children: string;
+  children: string | React.ReactNode;
   className?: string;
 };
 
