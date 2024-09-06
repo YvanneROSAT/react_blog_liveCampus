@@ -1,5 +1,6 @@
 import { TypographyH4, TypographyP } from "./ui/typography";
 import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 type CardPostProps = {
     title: string;
@@ -26,7 +27,7 @@ export default function CardPost({title, author, slug, summary, category, create
                     <strong>Date de création:</strong>{" "}
                     {new Date(created_at).toLocaleDateString()}
                 </p>
-                <Link to={`post/${slug}`} className="text-blue-500 hover:underline">Lire plus</Link>
+                <Link to={`post/${slug}`} className="text-blue-500 hover:underline"><Button variant="default" className="mt-5">En savoir plus</Button></Link>
             </li>
         </ul>
     );

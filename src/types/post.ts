@@ -6,5 +6,5 @@ export type Post = {
     category: string;
     summary: string;
     content?: string;
-    created_at: Date;
+    created_at: Date | string;
 };
